@@ -1,7 +1,11 @@
 name:                cve
 version:             0.1.0.0
 synopsis:            simple and efficient cve datatype
--- description:         
+description:         This library provides a datatype 'Cve',
+                     a representation 'Common Vulnerabilities
+                     and Exposures' (See https://cve.mitre.org/).
+                     Encode and Decode functions are provided
+                     for textual representation.
 homepage:            github.com/chessai/cve.git
 license:             BSD3
 license-file:        LICENSE
@@ -15,8 +19,6 @@ cabal-version:       >=1.10
 
 library
   exposed-modules:     Data.Cve 
-  -- other-modules:       
-  -- other-extensions:    
   build-depends:       base >=4.7 && <5.0
                      , aeson
                      , text
